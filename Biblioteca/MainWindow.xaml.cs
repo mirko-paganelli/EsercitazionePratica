@@ -25,21 +25,28 @@ namespace Biblioteca
         {
             string autore, titolo, editore;
             int annoPubblicazione, numeroPagine;
+            autore = InputAutoreLibro.Text;
+            titolo = InputTitoloLibro.Text;
+            editore = InputEditoreLibro.Text;
+            annoPubblicazione = int.Parse(InputAnnoPubblicazioneLibro.Text);
+            numeroPagine = int.Parse(InputNumeroPagineLibro.Text);
+
         }
 
         private void btn_CercaLibro_Click(object sender, RoutedEventArgs e)
         {
-
+            string titolo = InputTitoloLibro2.Text;
         }
 
         private void btn_CercaLibroAutore_Click(object sender, RoutedEventArgs e)
         {
-
+            string autore = InputAutoreLibro2.Text;
         }
 
         private void btn_NumeroLibri_Click(object sender, RoutedEventArgs e)
         {
-
+            string numeroLibri = "";
+            OutputNumeroLibri.Text = numeroLibri; 
         }
     }
 }
