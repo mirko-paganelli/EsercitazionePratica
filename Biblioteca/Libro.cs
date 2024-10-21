@@ -20,5 +20,18 @@ namespace Biblioteca
             string stringa;
             return stringa = $"{autore}, {titolo}, {annoPubblicazione}, {editore}, {numeroPagine}";
         }
+        public int readingTime(int numeroPagine)
+        {
+            if (numeroPagine < 100)
+            {
+                return 1;
+            }
+            else if (numeroPagine > 100 && numeroPagine < 200)
+            {
+                return 2;
+            }
+            else return 3;
+            
+        }
     }
 }

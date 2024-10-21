@@ -26,6 +26,10 @@
         <Button x:Name="btn_CercaLibroAutore" Content="CERCA LIBRI" HorizontalAlignment="Left" Height="29" Margin="518,220,0,0" VerticalAlignment="Top" Width="102" Click="btn_CercaLibroAutore_Click"/>
         <Button x:Name="btn_NumeroLibri" Content="LIBRI PRESENTI" HorizontalAlignment="Left" Height="29" Margin="400,347,0,0" VerticalAlignment="Top" Width="102" Click="btn_NumeroLibri_Click"/>
         <TextBox x:Name="OutputNumeroLibri" HorizontalAlignment="Left" Height="29" Margin="536,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" IsEnabled="False"/>
+        <TextBox x:Name="OutputDatiLibro" HorizontalAlignment="Left" Height="30" Margin="168,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="OutputOreDiLettura" HorizontalAlignment="Left" Height="28" Margin="168,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="Titolo4_Copia" Content="DATI LIBRO" HorizontalAlignment="Left" Height="24" Margin="168,264,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="Titolo4_Copia1" Content="ORE DI LETTURA" HorizontalAlignment="Left" Height="25" Margin="168,337,0,0" VerticalAlignment="Top" Width="105"/>
 
     </Grid>
 </Window>

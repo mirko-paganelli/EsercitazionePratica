@@ -30,7 +30,15 @@ namespace Biblioteca
             editore = InputEditoreLibro.Text;
             annoPubblicazione = int.Parse(InputAnnoPubblicazioneLibro.Text);
             numeroPagine = int.Parse(InputNumeroPagineLibro.Text);
-
+            Libro libro = new Libro(autore,titolo, annoPubblicazione,editore,numeroPagine);
+            OutputDatiLibro.Text = (string)libro.ToString();
+            if (libro.readingTime(numeroPagine) == 1)
+            {
+                OutputOreDiLettura.Text = "Ore di lettura pari a 1";
+            }else if (libro.readingTime(numeroPagine) == 2)
+            {
+                OutputOreDiLettura.Text = "Ore di lettura pari a 2";
+            }else OutputOreDiLettura.Text = "Ore di lettura superiore a 2";
         }
 
         private void btn_CercaLibro_Click(object sender, RoutedEventArgs e)
